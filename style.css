@@ -283,29 +283,46 @@ a {
     max-width:300px;
 }
 
-#button-iPhone{
-    display:block;
-    margin:auto;
-    transition: left 0.5s;
-}
-
 caption{
     caption-side:top;
+    padding-bottom:20px;
 }
 
 table{
     margin:auto;
     border-collapse: collapse;
 }
+
 td, th{
-    border:1px solid #aaaaaa;
+    border-bottom:1px solid #aaaaaa;
+    padding:10px;
+    text-align:center;
 }
 
-#texte-cache{
-    text-align:center;
+th {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+
+#contenu-iPhone{
+    text-align:justify;
     width:100%;
     position:absolute;
-    left:-100%;
+    padding-top:70px;
+}
+
+#avis{
+  padding:20px 60px 0px 60px;
+}
+
+#button_iPhone{
+  display:block;
+  margin-top:20px;
+  margin-left:950px; 
+}
+
+.a-cacher{
+  display:none;
 }
 
 /*macbook------------------------------------------------*/
