@@ -251,23 +251,30 @@ a {
 /*présentation-------------------------------------------*/
 #presentation{
     clear:both;
-    padding-top: 4%;
+    padding-top: 60px;
     margin-bottom:0;
     background-color: #303030;
     color:white;
+    font-weight: bold;
 }
 
 #siege_apple{
-    max-width:25%;
+    max-width:40%;
     width:100%;
 }
 
 #presentation img {
-  float : right;
-  padding-right: 4%;
-  }
+	float : right;
+	padding-right: 4%;
+	padding-top: 4%;
+
+}
+#presentation p:first-child {
+  	padding-top : ;
+}
+
 #presentation p {
-  padding : 0 2% 1.1% 4%;
+  	padding : 1% 2% 1.1% 4%;
 }
 /*iphone-------------------------------------------------*/
 #iPhone{
@@ -371,11 +378,37 @@ th {
 }
 
 /*ipad---------------------------------------------------*/
-#Ipad{
+#ipad{
     background-color: #eeeeee;
 }
 
-.image-IPad{
-    width: 100%;
+#diaporama {
+    position: relative;
+    width: 100%;          /* largeur des images */
+    height: 100%;         /* hauteur des images */
+    margin:  0px auto;    /* 20px du haut et centrage horizontal */
+    overflow: hidden;       /* cache la partie des images non visibles si trop grandes
+                                            et donc aussi les autres images */
 }
+#imagesipad ul li {
+    display: table-cell;   /* les images sont considérés comme rangées
+                     dans une ligne de tableau, donc les unes à coté des autres */
+}
+ul { padding: 0px; }
+
+#imagesipad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;            
+    padding: 0;
+    animation-name: AutoSlide;              
+    animation-duration: 10s;
+    animation-delay: 2s;                    
+}
+@keyframes AutoSlide {
+    0%  { left: 0px; }
+    100% { left: -2800px ; }
+}  
 /*footer-------------------------------------------------*/
