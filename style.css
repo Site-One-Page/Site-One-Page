@@ -385,36 +385,6 @@ th {
     background-color: #eeeeee;
 		box-sizing: border-box; /*reset*/
 }
-
-#diaporama {
-    position: relative;
-    width: 100%;          /* largeur des images */
-    height: 100%;         /* hauteur des images */
-    margin:  0px auto;    /* 20px du haut et centrage horizontal */
-    overflow: hidden;       /* cache la partie des images non visibles si trop grandes
-                                            et donc aussi les autres images */
-}
-#imagesipad ul li {
-    display: table-cell;   /* les images sont considérés comme rangées
-                     dans une ligne de tableau, donc les unes à coté des autres */
-}
-ul { padding: 0px; }
-
-#imagesipad {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    animation-name: AutoSlide;
-    animation-duration: 10s;
-    animation-delay: 2s;
-}
-@keyframes AutoSlide {
-    0%  { left: 0px; }
-    100% { left: -2800px ; }
-}
 /* Slider iPad ---------------------------------------- */
 /* Panels. */
 .splitview {
@@ -439,6 +409,16 @@ ul { padding: 0px; }
 }
 #ipad17{
 	color: #000;
+}
+#ipad17 h2 {
+	font-weight: bold;
+	font-size: 35px;
+	padding-bottom: 1%;
+}
+#ipad18 h2 {
+	font-weight: bold;
+	font-size: 35px;
+	padding-bottom: 1%;
 }
 .panel .description {
     width: 25%;
