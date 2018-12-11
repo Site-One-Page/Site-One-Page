@@ -260,25 +260,29 @@ a {
     color:white;
     font-weight: bold;
 }
-
-#siege_apple{
-    max-width:40%;
-    width:100%;
+.container{
+  width: 80%;
+  margin: auto;
+}
+#presentation {
+  min-height: 100vh;
+  background: url('images/siege_apple.png');
+  background-size: cover;
+  color: #111;
+  /*margin: 0;*/
+}
+#intro{padding-top: 10%;}
+#visibility_pres {
+	margin-right: 45%;
+	background-color: rgba(255, 255, 255, 0.50);
+	border-radius: 20px;
+}
+#intro p{
+	font-size: 20px;
+	padding: 1%;
 }
 
-#presentation img {
-	float : right;
-	padding-right: 4%;
-	padding-top: 4%;
 
-}
-#presentation p:first-child {
-  	padding-top : ;
-}
-
-#presentation p {
-  	padding : 1% 2% 1.1% 4%;
-}
 /*iphone-------------------------------------------------*/
 #iPhone{
     background-color: #eeeeee;
@@ -294,6 +298,7 @@ a {
 }
 
 caption{
+		color: black;
     caption-side:top;
     padding-bottom:20px;
 }
