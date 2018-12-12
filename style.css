@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,7 +45,10 @@ table {
 
 /*code projet----------------------------------------------*/
 body{
-    font-family:"Lucida Grande", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+  font-family:"Lucida Grande", sans-serif;
 }
 
 input{
@@ -171,7 +174,7 @@ a {
 .links-menu:active:before {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
-  left: 0;  
+  left: 0;
 }
 
 .links-menu-active:before {
@@ -209,9 +212,9 @@ a {
 
 @media screen and (max-width: 900px) {
   .menu {
-    flex-direction: column; 
+    flex-direction: column;
   }
-  
+
   .logo-menu {
     display: flex;
     flex-direction: row;
@@ -219,15 +222,15 @@ a {
     padding: 1em 0;
     width: 100%;
   }
-  
+
   .title-logo-menu {
     font-size: 1.5em;
   }
-  
+
   .btn-menu {
     display: block;
   }
-  
+
   .links {
     display: flex;
     flex-direction: row;
@@ -235,7 +238,7 @@ a {
     justify-content: space-around;
     width: 100%;
   }
-  
+
   .links-menu {
     margin: 10px;
   }
@@ -245,30 +248,41 @@ a {
   .ctn-title {
     font-size: 20px;
     text-align: center;
-  } 
+  }
 }
 
 /*présentation-------------------------------------------*/
 #presentation{
     clear:both;
-    padding-top: 4%;
+    padding-top: 60px;
     margin-bottom:0;
     background-color: #303030;
     color:white;
+    font-weight: bold;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+#presentation {
+  min-height: 100vh;
+  background: url('images/siege_apple.png');
+  background-size: cover;
+  color: #111;
+  /*margin: 0;*/
+}
+#intro{padding-top: 10%;}
+#visibility_pres {
+	margin-right: 45%;
+	background-color: rgba(255, 255, 255, 0.50);
+	border-radius: 20px;
+}
+#intro p{
+	font-size: 20px;
+	padding: 1%;
 }
 
-#siege_apple{
-    max-width:25%;
-    width:100%;
-}
 
-#presentation img {
-  float : right;
-  padding-right: 4%;
-  }
-#presentation p {
-  padding : 0 2% 1.1% 4%;
-}
 /*iphone-------------------------------------------------*/
 #iPhone{
     background-color: #eeeeee;
@@ -284,6 +298,7 @@ a {
 }
 
 caption{
+		color: black;
     caption-side:top;
     padding-bottom:20px;
 }
@@ -318,7 +333,7 @@ th {
 #button_iPhone{
   display:block;
   margin-top:20px;
-  margin-left:950px; 
+  margin-left:950px;
 }
 
 .a-cacher{
@@ -332,50 +347,211 @@ th {
     height:825px;
 }
 
-.image-macbook{
-    max-width:800px;
-    width: 100%;
+.macbook_contents{
+  display:flex;
 }
-#macbookair{
-    margin-top: -100px;
+
+.postair{
+  width: 600px;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
 }
-#title_macbookair  {
-    font-size: 25px;
-    margin-left: 100px;
-    margin-top: -150px;
+.postair:hover .postair-s{
+  width: 600px;
 }
-.liste_macbookair{
-    margin-left: 100px;
+.postair img {
+  display: block;
+  width: 600px;
+  height: 400px;
 }
+.postair-s{
+  width: 0px;
+  height: 400px;
+  background: rgba(103, 58, 183, 0.71);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.postair-s h2{
+  color: white;
+  font-size: 50px;
+  border: 6px solid white;
+  padding: 10px 30px;
+}
+
+
 
 
 #macbookpro{
-   margin-left: 550px;
-   margin-top: -120px;
+height : 300px;
+}
+.postpro{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  cursor: pointer;
+}
+.postpro:hover .postpro-s{
+  width: 600px;
+}
+.postpro img {
+  display: block;
+  width: 600px;
+  height: 400px;
+}
+.postpro-s{
+  width: 0px;
+  height: 400px;
+  background: rgba(103, 58, 183, 0.71);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.postpro-s h2{
+  color: white;
+  font-size: 50px;
+  border: 6px solid white;
+  padding: 10px 30px;
 }
 
-#title_macbookpro  {
-    font-size: 25px;
-    margin-left: 1100px;
-    margin-top: -300px;
+#macbook h1{
+  font-size: 50px;
+  padding-top: 300px;
+  padding-left: 230px;
 }
 
-.liste_macbookpro{
-    margin-left: 1100px;
+.droite p{
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
 }
-
-#bouton_macbook{
-    margin-top: 230px;
-    display:block;
-    margin-left:680px;
-}
-
 /*ipad---------------------------------------------------*/
-#Ipad{
+#ipad{
     background-color: #eeeeee;
+		box-sizing: border-box; /*reset*/
+}
+/* Slider iPad ---------------------------------------- */
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
 }
 
-.image-IPad{
-    width: 100%;
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
 }
+
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #FFF;
+}
+#ipad17{
+	color: #000;
+}
+#ipad17 h2 {
+	font-weight: bold;
+	font-size: 35px;
+	padding-bottom: 1%;
+}
+#ipad18 h2 {
+	font-weight: bold;
+	font-size: 35px;
+	padding-bottom: 1%;
+}
+.panel .description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.panel img {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    background-color: #eee;
+		color : black;
+    z-index: 1;
+}
+
+.bottom .description {
+    right: 5%;
+}
+
+.top {
+    background-color: #303030;
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+.top .description {
+    left: 5%;
+}
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
 /*footer-------------------------------------------------*/
