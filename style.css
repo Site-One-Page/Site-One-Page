@@ -254,31 +254,30 @@ a {
 /*présentation-------------------------------------------*/
 #presentation{
     clear:both;
-    padding-top: 60px;
-    margin-bottom:0;
     background-color: #303030;
     color:white;
     font-weight: bold;
 }
 .container{
   width: 80%;
+	min-width: 600px;
   margin: auto;
 }
 #presentation {
-  min-height: 100vh;
+  min-height: 90vh;
   background: url('images/siege_apple.png');
   background-size: cover;
-  color: #111;
+  color: #eee;
   /*margin: 0;*/
 }
-#intro{padding-top: 10%;}
+#intro{padding-top: 7%;}
 #visibility_pres {
 	margin-right: 45%;
-	background-color: rgba(255, 255, 255, 0.50);
+	background-color: rgba(0, 0, 0, 0.80);
 	border-radius: 20px;
 }
 #intro p{
-	font-size: 20px;
+	font-size: 14px;
 	padding: 1%;
 }
 
