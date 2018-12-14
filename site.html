@@ -9,7 +9,7 @@
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -76,10 +76,10 @@
           <tr>
               <td></td>
               <td>
-                <img class="image-iPhone" id="iPhonexr" src="images/iPhonexr.png" alt="iPhone Xr"/>
+                <img class="image-iPhone" id="iPhonexr" src="images/iphonexr.png" alt="iPhone Xr"/>
               </td>
               <td>
-                  <img class="image-iPhone" id="iPhonexs" src="images/iPhonexs.png" alt="iPhone Xs"/>
+                  <img class="image-iPhone" id="iPhonexs" src="images/iphonexs.png" alt="iPhone Xs"/>
               </td>
             </tr>
           <tr>
@@ -124,7 +124,7 @@
           </tr>
         </table>
 
-        <p id="avis">Malgré l’excellente qualité de l’iPhone Xs (Max), l’iPhone Xr reste un excellent compromis pour les étudiants. Rassemblant des composants similaires à mi-chemin entre le Xs et le Xs Max, l’iPhone Xr permet d’avoir un appareil d’une bonne qualité sans pour autant dépenser le prix des modèles suivants.</p>
+        <p id="avis">Malgré l’excellente qualité de l’iPhone Xs (Max), l’iPhone Xr reste un excellent compromis pour les étudiants. Rassemblant des composants similaires à mi-chemin entre le Xs et le Xs Max, l’iPhone Xr permet d’avoir un smartphone d’une bonne qualité sans pour autant dépenser le prix des modèles suivants.</p>
 
         <input type="button" value="En savoir +" id ="button_iPhone">
       </div>
@@ -134,27 +134,49 @@
 
   <section id="macbook">
 
+  <div class="macbook_contents">
 
-  <img class="image-macbook" id="macbookair" src="images/macbookair.png" alt="Macbook Air" />
-   <h2 id ="title_macbookair">Macbook Air</h2>
-   <p class = "liste_macbookair">Autonomie une journée entière
-   <br/>Disponible en argent, gris sidéral et noir
-   <br/>Alluminium 100% recyclé</p>
+    <div class="gauche">
+      <div class="postair">
+        <img class="image-macbook" id="macbookair" src="images/macbookair.png" alt="Macbook Air" /> 
+        <h2 id ="title_macbookair">Macbook air</h2>
+        <p class = "liste_macbookair">Autonomie une journée entière
+        <br/>Disponible en argent, gris sidéral et noir
+        <br/>Alluminium 100% recyclé</p>
 
-
-
-<br/>
-
-  <img class="image-macbook" id="macbookpro" src="images/macbookpro.png" alt="Macbook Pro" />
-  <h2 id ="title_macbookpro">Macbook Pro</h2>
-   <p class = "liste_macbookpro">Plus performant
-   <br/>Plus puissant
-   <br/>Technologie True Tone</p>
-<br/>
+        <div class="postair-s">
+          <p>La plupart des étudiants qui sont clients chez Apple, choisissent Macbook air pour son autonomie, ses caractéristiques pluridisciplinaires adaptés à la vie étudiante, ainsi que son prix plus raisonnable que le Macbook pro.</p>
+        </div>
+      </div>
 
 
-      <input type="button" value="En savoir +" id ="bouton_macbook">
- <!-- contenu dans en savoir plus -->
+      <div class="postpro">
+        <img class="image-macbook" id="macbookpro" src="images/macbookpro.png" alt="Macbook Pro" />
+        <h2 id ="title_macbookpro">Macbook pro</h2>
+        <p class = "liste_macbookpro">Plus performant
+        <br/>Plus puissant
+        <br/>Technologie True Tone</p>
+
+        <div class="postpro-s">
+        <h2>HOVER</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="droite">
+      <h1>MACBOOK</h1>
+      <br/>
+      <p>En tant qu’étudiant, on est presque obligé d’avoir un ordinateur et un ordinateur portable est le choix le plus adapté, car sa mobilité nous permet de travailler à l’université, à la bibliothèque ou à la maison.
+      Macbook est un produit plus cher en général, que la concurrence mais son prix est justifié par une bonne qualité et une longue durée de vie, tout au long de nos études. Apple offre plusieurs lignes de produits et les plus adaptés pour les étudiants sont Macbook air et Macbook pro.</p>
+
+
+    </div>
+  </div>
+
+
+
+      <!--<input type="button" value="En savoir +" id ="bouton_macbook">-->
  <!--
 <p>En tant qu’étudiant, on est presque obligé d’avoir un ordinateur et un ordinateur portable est le choix le plus adapté, car sa mobilité nous permet de travailler à l’université, à la bibliothèque ou à la maison.
 Macbook est un produit plus cher en général, que la concurrence mais son prix est justifié par une bonne qualité et une longue durée de vie, tout au long de nos études. Apple offre plusieurs lignes de produits et les plus adaptés pour les étudiants sont Macbook air et Macbook pro.</p>
@@ -204,5 +226,6 @@ La plupart des étudiants qui sont clients chez Apple, choisissent Macbook air p
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
     <script  src="js/index.js"></script>
     <script  src="js/ipad.js"></script>
+    <script src="js/iphone.js"></script>
 </body>
 </html>
