@@ -301,6 +301,7 @@ caption{
 table{
     margin:auto;
     border-collapse: collapse;
+    width:50%;
 }
 
 td, th{
@@ -331,8 +332,8 @@ th {
   margin-left:50%;
 }
 
-.a-cacher{
-  visibility:collapse;
+table #a-cacher{
+  display:none;
 }
 
 /*macbook------------------------------------------------*/
