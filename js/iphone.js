@@ -1,8 +1,6 @@
-$("#button_iPhone").click(function(event){
-    if(event.target==true){
-        $(".a-cacher").css("visibility","visible");
-    }
-    else{
-        $(".a-cacher").css("visiblity","collapse");
-    }
-});
+  $(document).ready(function(){
+    $("#a-cacher").toggle(false);
+    $("#button_iPhone").click(function() { 
+        $("#a-cacher").toggle();
+      });
+  });
