@@ -341,6 +341,7 @@ table #a-cacher{
     background-color: #303030;
     color: white;
     height:825px;
+    
 }
 
 .macbook_contents{
@@ -364,7 +365,7 @@ table #a-cacher{
 .postair-s{
   width: 0px;
   height: 400px;
-  background: rgba(103, 58, 183, 0.71);
+  background: rgba(128,128,128, 0.71);
   position: absolute;
   top: 0;
   display: flex;
@@ -373,16 +374,29 @@ table #a-cacher{
   overflow: hidden;
   transition: 0.7s ease;
 }
-.postair-s h2{
+.postair-s p{
   color: white;
-  font-size: 50px;
-  border: 6px solid white;
+  text-align: justify;
+  border: 3px solid white;
   padding: 10px 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+#macbookair{
+  margin-top: -10px;
+  height : 400px;
+}
+#title_macbookair{
+  margin-top: -90px;
+}
+.liste_macbook{
+  margin-left: 30px;
 }
 
-
-
-
+.title_macbook{
+  margin-left: 30px;
+  font-size: 25px;
+}
 #macbookpro{
 height : 300px;
 }
@@ -403,7 +417,7 @@ height : 300px;
 .postpro-s{
   width: 0px;
   height: 400px;
-  background: rgba(103, 58, 183, 0.71);
+  background: rgba(128,128,128, 0.71);
   position: absolute;
   top: 0;
   display: flex;
@@ -412,11 +426,13 @@ height : 300px;
   overflow: hidden;
   transition: 0.7s ease;
 }
-.postpro-s h2{
+.postpro-s p{
   color: white;
-  font-size: 50px;
-  border: 6px solid white;
+  border: 3px solid white;
   padding: 10px 30px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #macbook h1{
@@ -551,3 +567,36 @@ height : 300px;
 }
 
 /*footer-------------------------------------------------*/
+footer{
+  position: relative;
+  background: rgb(32,32,32);
+  margin-top: -173px;
+}
+footer p{
+  color: rgb(211,211,211); 
+  text-align: center;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.footer_contents{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer_tab{
+  width: 700px;
+  
+}
+
+.footer_tab a{
+  color: rgb(211,211,211);
+  padding-left: 50px ;
+  padding-top: 50px;
+
+}
+
+
+
+
+
