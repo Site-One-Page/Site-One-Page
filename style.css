@@ -244,7 +244,7 @@ a {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .ctn-title {
     font-size: 20px;
     text-align: center;
@@ -253,7 +253,7 @@ a {
 
 /*présentation-------------------------------------------*/
 #presentation{
-    clear:both;
+    /*clear:both;*/
     background-color: #303030;
     color:white;
     font-weight: bold;
@@ -280,11 +280,19 @@ a {
 	font-size: 14px;
 	padding: 1%;
 }
-
+@media only screen and (min-width: 500px) {
+	#presentation {
+		display:block;
+		color:#000;
+	}
+	.container {
+		display:inline-block;
+	}
+}
 
 /*iphone-------------------------------------------------*/
 #iPhone{
-    background-color: #eeeeee;
+    background-color: #eee;
 }
 
 .image-iPhone{
@@ -353,7 +361,7 @@ table #a-cacher{
     background-color: #303030;
     color: white;
     height:825px;
-    
+
 }
 
 .macbook_contents{
@@ -582,42 +590,32 @@ height : 300px;
     body {
         font-size: 75%;
     }
+
 }
 
 /*footer-------------------------------------------------*/
 footer{
   position: relative;
-  background: rgb(32,32,32);
-  margin-top: -173px;
-  padding-top: 10px;
-
+	background-color: #222;
+	box-sizing: border-box; /*reset*/
 }
 footer p{
-  color: rgb(211,211,211); 
+  color: rgb(211,211,211);
   text-align: center;
   font-style: italic;
   font-size: 11px;
  
 }
-
 .footer_contents{
   display: flex;
   flex-wrap: nowrap;
 }
-
 .footer_tab{
   width: 700px;
-  
 }
-
 .footer_tab a{
   color: rgb(211,211,211);
   padding-left: 50px ;
   padding-top: 50px;
 
 }
-
-
-
-
-
