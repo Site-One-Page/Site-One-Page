@@ -292,56 +292,56 @@ a {
 
 /*iphone-------------------------------------------------*/
 #iPhone{
-    background-color: #eee;
+  background-color: #eeeeee;
+  padding-top:5%;
 }
 
 .image-iPhone{
-    max-width:400px;
-    width:100%;
+   max-width:400px;
+   width:100%;
 }
 
 caption{
-		color: black;
-    caption-side:top;
-    padding-bottom:20px;
+   color: black;
+   caption-side:top;
+   padding-bottom:20px;
 }
 
 table{
-    margin:auto;
-    border-collapse: collapse;
-    width:50%;
+   margin:auto;
+   border-collapse: collapse;
+   width:50%;
 }
 
 td, th{
-    border-bottom:1px solid #aaaaaa;
-    padding:10px;
-    text-align:center;
+   border-bottom:1px solid #aaaaaa;
+   padding:10px;
+   text-align:center;
 }
 
 th {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+   background-color: rgba(0,0,0,0.5);
+   color: white;
+   font-weight:bold;
 }
 
 #contenu-iPhone{
-    text-align:justify;
-    width:100%;
-    position:absolute;
-    padding-top:2%;
+   text-align:justify;
+   width:100%;
 }
 
 #avis{
-  padding:20px 60px 0px 60px;
+   padding:20px 60px 0px 60px;
 }
 
 #button_iPhone{
-  display:block;
-  margin-top:20px;
-  margin-left:50%;
+   display:block;
+   margin-top:20px;
+   margin-left:50%;
 }
 
 table #a-cacher{
-  display:none;
+   display:none;
 }
 
 /*macbook------------------------------------------------*/
@@ -596,7 +596,15 @@ footer p{
 }
 .footer_tab a{
   color: rgb(211,211,211);
-  padding-left: 50px ;
-  padding-top: 50px;
-
 }
+#footer2 a:hover{
+   font-weight: bold;
+}
+li{
+  color:rgb(211,211,211);
+  list-style-type:none;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+
