@@ -375,6 +375,7 @@ table #a-cacher{
   height: 400px;
 }
 .postair-s{
+  margin-top: +10px;
   width: 0px;
   height: 400px;
   background: rgba(128,128,128, 0.71);
@@ -427,6 +428,7 @@ height : 300px;
   height: 400px;
 }
 .postpro-s{
+  margin-top: +10px;
   width: 0px;
   height: 400px;
   background: rgba(128,128,128, 0.71);
@@ -451,13 +453,17 @@ height : 300px;
   font-size: 50px;
   padding-top: 300px;
   padding-left: 230px;
+
 }
 
 .droite p{
   padding-left: 50px;
   padding-right: 50px;
   text-align: justify;
+  position: absolute;
 }
+
+
 /*ipad---------------------------------------------------*/
 #ipad{
     background-color: #eeeeee;
