@@ -615,7 +615,15 @@ footer p{
 }
 .footer_tab a{
   color: rgb(211,211,211);
-  padding-left: 50px ;
-  padding-top: 50px;
-
 }
+#footer2 a:hover{
+   font-weight: bold;
+}
+li{
+  color:rgb(211,211,211);
+  list-style-type:none;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+
